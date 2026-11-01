@@ -28,6 +28,10 @@ npm run dev     # demo at http://localhost:5173
 
 The demo page is generated from [`src/demo/content.json`](src/demo/content.json); expand “View the JSON behind this page” at the bottom.
 
+## Architecture
+
+A registry maps block types to components; galleries compose a slider, tiles and a portal-rendered lightbox; YouTube uses a facade; and the edge-case-heavy logic lives in pure, unit-tested helpers. Details, decisions and alternatives: **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)**.
+
 ## Usage
 
 ```jsx
