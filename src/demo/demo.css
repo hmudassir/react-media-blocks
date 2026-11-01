@@ -1,0 +1,6 @@
+html, body { overflow-x: hidden; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #1c2230; background: #fff; }
+.demo { max-width: var(--mb-text-width, 720px); margin: 0 auto; padding: 40px 16px 80px; }
+.demo h1 { margin: 0 0 8px; }
+.demo-source { margin-top: 40px; font-size: 13px; }
+.demo-source pre { overflow: auto; max-height: 420px; background: #f6f7f9; padding: 14px; border-radius: 10px; }

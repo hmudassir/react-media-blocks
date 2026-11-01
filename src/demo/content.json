@@ -1,0 +1,40 @@
+{
+  "title": "Media blocks",
+  "blocks": [
+    { "type": "p", "text": "This page is rendered from a JSON document. Every element below is a block: text, images, galleries and a video." },
+    { "type": "image", "src": "/samples/sample-1.jpg", "alt": "Abstract landscape in warm light", "caption": "Single image, normal width", "size": "normal" },
+    { "type": "heading", "text": "Slider" },
+    { "type": "gallery", "layout": "slider", "caption": "Swipe, use the arrows, or the arrow keys", "images": [
+      { "src": "/samples/sample-1.jpg", "alt": "Warm landscape", "caption": "Slide 1 has its own caption" },
+      { "src": "/samples/sample-2.jpg", "alt": "Blue landscape" },
+      { "src": "/samples/sample-3.jpg", "alt": "Green landscape" },
+      { "src": "/samples/sample-4.jpg", "alt": "Violet landscape" }
+    ]},
+    { "type": "quote", "text": "Unknown block types are skipped, so content written for a newer version never crashes an older one." },
+    { "type": "heading", "text": "Grid" },
+    { "type": "gallery", "layout": "grid", "columns": 3, "caption": "Equal tiles. Click one to open the lightbox.", "images": [
+      { "src": "/samples/sample-5.jpg", "alt": "Square sample A" },
+      { "src": "/samples/sample-6.jpg", "alt": "Square sample B" },
+      { "src": "/samples/sample-7.jpg", "alt": "Portrait sample A" },
+      { "src": "/samples/sample-8.jpg", "alt": "Portrait sample B" },
+      { "src": "/samples/sample-2.jpg", "alt": "Blue landscape" },
+      { "src": "/samples/sample-3.jpg", "alt": "Green landscape" }
+    ]},
+    { "type": "heading", "text": "Mosaic" },
+    { "type": "gallery", "layout": "mosaic", "columns": 4, "caption": "Mixed sizes: large (2×2), tall (1×2), wide (2×1). 16 cells fill four rows.", "images": [
+      { "src": "/samples/sample-9.jpg", "alt": "Panorama", "span": "large", "caption": "large" },
+      { "src": "/samples/sample-7.jpg", "alt": "Portrait sample A", "span": "tall", "caption": "tall" },
+      { "src": "/samples/sample-5.jpg", "alt": "Square sample A" },
+      { "src": "/samples/sample-6.jpg", "alt": "Square sample B" },
+      { "src": "/samples/sample-2.jpg", "alt": "Blue landscape", "span": "wide", "caption": "wide" },
+      { "src": "/samples/sample-8.jpg", "alt": "Portrait sample B", "span": "tall" },
+      { "src": "/samples/sample-4.jpg", "alt": "Violet landscape" },
+      { "src": "/samples/sample-1.jpg", "alt": "Warm landscape", "span": "wide" },
+      { "src": "/samples/sample-3.jpg", "alt": "Green landscape" }
+    ]},
+    { "type": "heading", "text": "Video" },
+    { "type": "youtube", "video": "https://www.youtube.com/watch?v=YE7VzlLtp-4", "title": "Big Buck Bunny (Blender Foundation, CC BY 3.0)", "caption": "Loads YouTube only when you press play" },
+    { "type": "image", "src": "/samples/missing.jpg", "alt": "A missing image", "caption": "A missing file shows a placeholder, not a broken icon" },
+    { "type": "image", "src": "/samples/sample-9.jpg", "alt": "Panorama", "caption": "Full width", "size": "full" }
+  ]
+}
